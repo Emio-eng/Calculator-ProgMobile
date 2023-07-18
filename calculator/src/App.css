@@ -1,0 +1,29 @@
+.custom-button {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px; 
+  width: 100px; 
+  margin: 4px; 
+
+}
+.special-button {
+  background-color: grey;
+  color: white;
+}
+
+.plus-button {
+  background-color: green;
+}
+
+.minus-button {
+  background-color: red;
+}
+
+.multiply-button {
+  background-color: blue;
+}
+
+.divide-button {
+  background-color: blue;
+}
