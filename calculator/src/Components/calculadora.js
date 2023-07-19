@@ -20,7 +20,6 @@ const Calculadora = () => {
         break;
       case '=':
         try {
-          // eslint-disable-next-line no-eval
           const result = eval(displayValue);
           setDisplayValue(result.toString());
         } catch (error) {
