@@ -26,10 +26,11 @@ const Calculadora = () => {
           setDisplayValue('Error');
         }
         break;
-      case 'MC':
-        setMemoryValue(0);
-        setHasMemoryValue(false);
-        break;
+        case 'MC':
+          setMemoryValue(0);
+          setHasMemoryValue(false);
+          setDisplayValue('0');
+          break;
       case 'MR':
         setDisplayValue(memoryValue.toString());
         break;
