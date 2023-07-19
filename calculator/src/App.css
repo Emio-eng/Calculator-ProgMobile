@@ -52,11 +52,22 @@
   font-size: 24px;
   text-align: right;
   width: 100%;
+  display: flex;
 }
 
+.memory-value {
+  margin-right: auto;
+}
+
+.number-value {
+  margin-left: auto;
+}
 .display-container-dis{
   display: flex;
   flex-direction:rown;
   width:100%
 }
 
+.has-memory {
+  justify-content: flex-start;
+}
