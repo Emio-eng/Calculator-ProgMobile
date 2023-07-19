@@ -10,8 +10,13 @@ const Calculadora = () => {
   const handleButtonClick = (value) => {
     switch (value) {
       case 'C':
+      if (hasMemoryValue) {
         setDisplayValue('0');
+      } else {
+        setDisplayValue('0');
+        setMemoryValue(0);
         setHasMemoryValue(false);
+      }
         break;
       case '=':
         try {
@@ -55,7 +60,9 @@ const Calculadora = () => {
 
   return (
     <div className="calculadora-container">
-      <Display value={displayValue} hasMemory={hasMemoryValue} />
+    <div className="display-container-dis">
+    <Display value={displayValue} hasMemory={hasMemoryValue} />
+    </div>
 
       <div>
         <Button value="MC" onClick={() => handleButtonClick('MC')} />
